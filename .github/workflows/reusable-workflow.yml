@@ -7,6 +7,13 @@ on:
         required: true
         type: string
   workflow_call:
+    inputs:
+      config-path:
+        required: true
+        type: string
+    secrets:
+      personal-access-token:
+        required: true
 
 jobs:
   build:

@@ -8,12 +8,9 @@ on:
         type: string
   workflow_call:
     inputs:
-      config-path:
+      node:
         required: true
         type: string
-    secrets:
-      personal-access-token:
-        required: true
 
 jobs:
   build:
